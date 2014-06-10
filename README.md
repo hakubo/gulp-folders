@@ -14,12 +14,12 @@ npm install gulp-folder --save-dev
 var gulp = require('gulp'),
 	path = require('path'),
 	folder = require('gulp-folder'),
-	path = 'path/to/folder';
+	pathToFolder = 'path/to/folder';
 
 gulp.task('task', folder(path, function(folder){
-	return gulp.src(path.join(path, folder, '*.js'))
+	return gulp.src(path.join(pathToFolder, folder, '*.js'))
 		.pipe(concat(folder + '.js'))
-		.pipe(gulp.dest(paths.dest));
+		.pipe(gulp.dest('dist'));
 }));
 ```
 
