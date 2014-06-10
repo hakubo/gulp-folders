@@ -1,0 +1,27 @@
+{
+  "name": "gulp-folder",
+  "version": "0.0.1",
+  "description": "Gulp plugin that lets you work with folders and treat them as package names",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hakubo/gulp-folder"
+  },
+  "keywords": [
+    "gulp",
+    "folder",
+    "gulp-folder"
+  ],
+  "author": "Hakubo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hakubo/gulp-folder/issues"
+  },
+  "homepage": "https://github.com/hakubo/gulp-folder",
+  "dependencies": {
+    "event-stream": "^3.1.5"
+  }
+}
