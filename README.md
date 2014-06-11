@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/hakubo/gulp-folders.svg?branch=master)](https://travis-ci.org/hakubo/gulp-folders)
+
 # gulp-folder
 
 Gulp plugin that lets you work with folders and treat them as package names
