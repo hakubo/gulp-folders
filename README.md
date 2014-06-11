@@ -1,11 +1,11 @@
-# gulp-folders
+# gulp-folder
 
 Gulp plugin that lets you work with folders and treat them as package names
 
 ## Install
 
 ```
-npm install gulp-folders --save-dev
+npm install gulp-folder --save-dev
 ```
 
 ## Usage
@@ -13,10 +13,10 @@ npm install gulp-folders --save-dev
 ```javascript
 var gulp = require('gulp'),
 	path = require('path'),
-	folders = require('gulp-folder'),
+	folder = require('gulp-folder'),
 	pathToFolder = 'path/to/folder';
 
-gulp.task('task', folders(pathToFolder, function(folder){
+gulp.task('task', folder(path, function(folder){
 	return gulp.src(path.join(pathToFolder, folder, '*.js'))
 		.pipe(concat(folder + '.js'))
 		.pipe(gulp.dest('dist'));
