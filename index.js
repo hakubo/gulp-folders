@@ -1,3 +1,7 @@
+/**
+ * @description Gulp plugin that lets you work with folders and treat them as package names
+ * @see README.md
+ */
 var fs = require('fs'),
 	path = require('path');
 	es = require('event-stream');

@@ -1,28 +1,13 @@
 [![Build Status](https://travis-ci.org/hakubo/gulp-folders.svg?branch=master)](https://travis-ci.org/hakubo/gulp-folders)
 
-# gulp-folder
+# gulp-folders
 
 Gulp plugin that lets you work with folders and treat them as package names
 
 ## Install
 
 ```
-npm install gulp-folder --save-dev
-```
-
-## Usage
-
-```javascript
-var gulp = require('gulp'),
-	path = require('path'),
-	folder = require('gulp-folder'),
-	pathToFolder = 'path/to/folder';
-
-gulp.task('task', folder(path, function(folder){
-	return gulp.src(path.join(pathToFolder, folder, '*.js'))
-		.pipe(concat(folder + '.js'))
-		.pipe(gulp.dest('dist'));
-}));
+npm install gulp-folders --save-dev
 ```
 
 # Rationale
@@ -48,4 +33,23 @@ dist
   folder
     main.js
 	secondary.js
+```
+
+## Usage
+
+```javascript
+var gulp = require('gulp'),
+	path = require('path'),
+	folder = require('gulp-folder'),
+	pathToFolder = 'path/to/folder';
+
+gulp.task('task', folder(pathToFolder, function(folder){
+	//This will loop over all folders inside pathToFolder main, secondary
+	//Return stream so gulp-folders can concatenate all of them
+	//so you still can use safely use gulp multitasking
+
+	return gulp.src(path.join(pathToFolder, folder, '*.js'))
+		.pipe(concat(folder + '.js'))
+		.pipe(gulp.dest('dist'));
+}));
 ```
