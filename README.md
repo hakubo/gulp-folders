@@ -40,10 +40,10 @@ dist
 ```javascript
 var gulp = require('gulp'),
 	path = require('path'),
-	folder = require('gulp-folder'),
+	folders = require('gulp-folders'),
 	pathToFolder = 'path/to/folder';
 
-gulp.task('task', folder(pathToFolder, function(folder){
+gulp.task('task', folders(pathToFolder, function(folder){
 	//This will loop over all folders inside pathToFolder main, secondary
 	//Return stream so gulp-folders can concatenate all of them
 	//so you still can use safely use gulp multitasking
