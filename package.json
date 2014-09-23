@@ -1,6 +1,6 @@
 {
   "name": "gulp-folders",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Gulp plugin that lets you work with folders and treat them as package names",
   "main": "index.js",
   "scripts": {
