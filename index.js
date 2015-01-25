@@ -14,10 +14,14 @@ function getFolders(dir){
 }
 
 module.exports = function folders(dir, tasks){
-	return function(){
+	return function(done){
 		var folders = getFolders(dir),
 			streams = folders.map(tasks);
 
-		return es.concat.apply(null, streams);
+		if (streams.length === 0) {
+			done();
+		}
+
+		return es.merge.apply(null, streams);
 	};
 };

@@ -12,9 +12,9 @@
   },
   "keywords": [
     "gulp",
-	"folder",
+    "folder",
     "folders",
-	"gulp-folder",
+    "gulp-folder",
     "gulp-folders",
     "gulpplugin"
   ],
@@ -25,9 +25,10 @@
   },
   "homepage": "https://github.com/hakubo/gulp-folders",
   "dependencies": {
-    "event-stream": "^3.1.5"
+    "event-stream": "^3.2.1"
   },
   "devDependencies": {
-    "jasmine-node": "^1.14.3"
+    "gulp": "^3.8.10",
+    "jasmine-node": "^1.14.5"
   }
 }
