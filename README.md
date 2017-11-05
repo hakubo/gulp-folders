@@ -2,6 +2,8 @@
 
 # gulp-folders
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/hakubo/gulp-folders.svg)](https://greenkeeper.io/)
+
 Gulp plugin that lets you work with folders and treat them as package names
 
 ## Install
