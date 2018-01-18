@@ -1,3 +1,10 @@
 language: node_js
 node_js:
    - 6
+
+deploy:
+  provider: npm
+  email: adrien.morel@kappalys.com
+  api_key: $NPM_TOKEN
+  on:
+    tags: true
