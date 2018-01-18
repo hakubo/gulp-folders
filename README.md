@@ -1,13 +1,13 @@
-[![Build Status](https://travis-ci.org/kappalys/gulp-folders.svg?branch=master)](https://travis-ci.org/kappalys/gulp-folders)
+[![Build Status](https://travis-ci.org/kappalys/gulp-concat-folders.svg?branch=master)](https://travis-ci.org/kappalys/gulp-concat-folders)
 
-# gulp-folders
+# gulp-concat-folders
 
 Gulp plugin that lets you work with folders and treat them as package names
 
 ## Install
 
 ```
-npm install gulp-folders --save-dev
+npm install gulp-concat-folders --save-dev
 ```
 
 # Rationale
@@ -40,7 +40,7 @@ dist
 ```javascript
 var gulp = require('gulp'),
 	path = require('path'),
-	folders = require('gulp-folders'),
+	folders = require('gulp-concat-folders'),
 	pathToFolder = 'path/to/folder';
 
 gulp.task('task', folders(pathToFolder, function(folder){
