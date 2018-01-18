@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hakubo/gulp-folders"
+    "url": "https://github.com/kappalys/gulp-folders"
   },
   "keywords": [
     "gulp",
@@ -21,9 +21,9 @@
   "author": "Hakubo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hakubo/gulp-folders/issues"
+    "url": "https://github.com/kappalys/gulp-folders/issues"
   },
-  "homepage": "https://github.com/hakubo/gulp-folders",
+  "homepage": "https://github.com/kappalys/gulp-folders",
   "dependencies": {
     "event-stream": "^3.2.1"
   },
