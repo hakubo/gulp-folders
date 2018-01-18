@@ -3,8 +3,8 @@
  * @see README.md
  */
 var fs = require('fs'),
-	path = require('path');
-	es = require('event-stream');
+  path = require('path'),
+	  es = require('event-stream');
 
 function getFolders(dir){
 	return fs.readdirSync(dir)
@@ -19,7 +19,7 @@ module.exports = function folders(dir, tasks){
 			streams = folders.map(tasks);
 
 		if (streams.length === 0) {
-			done();
+			return done();
 		}
 
 		return es.merge.apply(null, streams);
