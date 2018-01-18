@@ -1,8 +1,6 @@
-[![Build Status](https://travis-ci.org/hakubo/gulp-folders.svg?branch=master)](https://travis-ci.org/hakubo/gulp-folders)
+[![Build Status](https://travis-ci.org/kappalys/gulp-folders.svg?branch=master)](https://travis-ci.org/kappalys/gulp-folders)
 
 # gulp-folders
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/hakubo/gulp-folders.svg)](https://greenkeeper.io/)
 
 Gulp plugin that lets you work with folders and treat them as package names
 
