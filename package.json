@@ -1,14 +1,15 @@
 {
-  "name": "gulp-folders",
+  "name": "gulp-concat-folders",
   "version": "1.1.1",
-  "description": "Gulp plugin that lets you work with folders and treat them as package names",
+  "description":
+    "Gulp plugin that lets you work with folders and treat them as package names",
   "main": "index.js",
   "scripts": {
     "test": "jasmine-node test/folders-spec.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kappalys/gulp-folders"
+    "url": "https://github.com/kappalys/gulp-concat-folders"
   },
   "keywords": [
     "gulp",
@@ -21,9 +22,9 @@
   "author": "Hakubo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kappalys/gulp-folders/issues"
+    "url": "https://github.com/kappalys/gulp-concat-folders/issues"
   },
-  "homepage": "https://github.com/kappalys/gulp-folders",
+  "homepage": "https://github.com/kappalys/gulp-concat-folders",
   "dependencies": {
     "event-stream": "^3.2.1"
   },
