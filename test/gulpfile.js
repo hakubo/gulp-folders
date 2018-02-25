@@ -1,20 +1,22 @@
 /**
-* Testing ground
+ * Testing ground
  * ../node_modules/.bin/gulp test
  * ../node_modules/.bin/gulp empty
  */
 
-var gulp = require('gulp'),
-	folders = require('../');
+let gulp = require('gulp');
+let concatFolders = require('../');
 
-gulp.task('test', folders('.', function(folder){
-	console.log(folder);
+gulp.task('test', done => {
+  return gulp
+		.src('./**/*.js')
+		.pipe(concatFolders());
+  done();
+});
 
-	return gulp.src(folder);
-}));
-
-gulp.task('empty', folders('empty', function(folder){
-	console.log(folder);
-
-	return gulp.src(folder);
-}));
+gulp.task('empty', done => {
+  return gulp
+		.src('./empty/**/*')
+		.pipe(concatFolders());
+  done();
+});

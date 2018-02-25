@@ -1,34 +1,40 @@
 {
-  "name": "gulp-folders",
-  "version": "1.1.0",
-  "description": "Gulp plugin that lets you work with folders and treat them as package names",
-  "main": "index.js",
-  "scripts": {
-    "test": "jasmine-node test/folders-spec.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/hakubo/gulp-folders"
-  },
-  "keywords": [
-    "gulp",
-    "folder",
-    "folders",
-    "gulp-folder",
-    "gulp-folders",
-    "gulpplugin"
+  "name": "gulp-concat-folders",
+  "description": "Concatenates files in folders",
+  "version": "1.3.0",
+  "repository": "kappalys/gulp-concat-folders",
+  "author": "Camille Terol <c.terol@lejourseleve.net> (https://www.kappalys.com)",
+  "files": [
+    "index.js"
   ],
-  "author": "Hakubo",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hakubo/gulp-folders/issues"
-  },
-  "homepage": "https://github.com/hakubo/gulp-folders",
+  "keywords": [
+    "gulpplugin",
+    "gulp",
+    "concat",
+    "folders"
+  ],
   "dependencies": {
-    "event-stream": "^3.2.1"
+    "concat-with-sourcemaps": "^1.0.0",
+    "through2": "^2.0.0",
+    "vinyl": "^2.0.0"
   },
   "devDependencies": {
-    "gulp": "^3.8.10",
-    "jasmine-node": "^1.14.5"
-  }
+    "fancy-log": "^1.3.2",
+    "gulp": "^4.0.0",
+    "gulp-sourcemaps": "^2.2.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.0.0",
+    "mocha-lcov-reporter": "^1.2.0",
+    "should": "^11.0.0",
+    "stream-array": "^1.0.1",
+    "stream-assert": "^2.0.1"
+  },
+  "scripts": {
+    "test": "mocha",
+    "coverage": "istanbul cover _mocha"
+  },
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "license": "MIT"
 }
