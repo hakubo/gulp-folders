@@ -1,17 +1,14 @@
 [![Build Status](https://travis-ci.org/kappalys/gulp-concat-folders.svg?branch=master)](https://travis-ci.org/kappalys/gulp-concat-folders)
 
 # gulp-concat-folders
-
 Gulp plugin that lets you work with folders and treat them as package names
 
 ## Install
-
 ```
-npm install gulp-concat-folders --save-dev
+yarn add --dev gulp-concat-folders
 ```
 
 # Rationale
-
 This gives you a perfect solution to build different packages out of folders.
 Given this structure:
 
@@ -38,18 +35,21 @@ dist
 ## Usage
 
 ```javascript
-var gulp = require('gulp'),
-	path = require('path'),
-	folders = require('gulp-concat-folders'),
-	pathToFolder = 'path/to/folder';
+let gulp = require('gulp');
+let path = require('path');
+let concatFolders = require('gulp-concat-folders');
+let pathToFolder = 'path/to/folder';
 
-gulp.task('task', folders(pathToFolder, function(folder){
-	//This will loop over all folders inside pathToFolder main, secondary
-	//Return stream so gulp-folders can concatenate all of them
-	//so you still can use safely use gulp multitasking
+gulp.task('task', done => {
+	/*
+    This will concat files present in the first level folders from the base
+    folder provided as argument. If no base folder is provided, pwd will be
+    used. This plugin returns a stream of vynil files, so you can safely
+    pipe it to other plugins.
+  */
 
-	return gulp.src(path.join(pathToFolder, folder, '*.js'))
-		.pipe(concat(folder + '.js'))
+	return gulp.src(path.join(pathToFolder, '**/*'))
+		.pipe(concatFolders(pathToFolder))
 		.pipe(gulp.dest('dist'));
 }));
 ```
