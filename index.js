@@ -19,7 +19,7 @@ module.exports = function folders(dir, tasks){
 			streams = folders.map(tasks);
 
 		if (streams.length === 0) {
-			done();
+			return done();
 		}
 
 		return es.merge.apply(null, streams);
