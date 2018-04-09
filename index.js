@@ -3,7 +3,7 @@
  * @see README.md
  */
 var fs = require('fs'),
-	path = require('path');
+	path = require('path'),
 	es = require('event-stream');
 
 function getFolders(dir){
