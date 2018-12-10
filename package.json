@@ -28,7 +28,7 @@
     "event-stream": "^3.2.1"
   },
   "devDependencies": {
-    "gulp": "^3.8.10",
+    "gulp": "^4.0.0",
     "jasmine-node": "^1.14.5"
   }
 }
